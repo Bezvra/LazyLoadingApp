@@ -1,0 +1,71 @@
+body {
+    --primary-text-color: #3b3b3b;
+    --primary-bg-color: #ffffff;
+    --primary-bg--button-bg-color: #f97500;
+    --primary-bg-color-active: #f97500;
+    --primary-accent-color: #f97500;
+
+    --secondary-text-color: #7f7f7f;
+    --secondary-bg-color: #f6f3ef;
+    --secondary-bg--button-bg-color: #D65D27;
+    --secondary-bg-color-active: #D65D27;
+    --secondary-accent-color: #f6f6f6;
+    --secondary-border-color: #c4c4c4;
+    --third-border-color:#c4c4c4;
+
+    --label-text-color: #7f7f7f;
+    --label-bg-color: transparent;
+    --label-accent-color: transparent;
+
+    --success-text-color: #89be0c;
+    --success-bg-color: #89be0c;
+    --success-accent-color: #fff;
+
+    --danger-text-color: #d53838;
+    --danger-bg-color: #d53838;
+    --danger-accent-color: #fff;
+
+    --warning-text-color: #F39C12;
+    --warning-bg-color: #F39C12;
+    --warning-accent-color: #222;
+
+    --info-text-color: #1dc4dd;
+    --info-bg-color: #1dc4dd;
+    --info-accent-color: #fff;
+
+    --link-text-color: #3b3b3b;
+    --link-text--button-bg-color: #3b3b3b;
+    --link-text-color-active: #3b3b3b;
+    --link-bg-color: transparent;
+    --link-text-common : #F97500;
+
+    --default-button-text-color: #ffffff;
+    --default-button-bg-color: #f97500;
+    --default-button-bg-color-hover: rgba(249; 117; 0; .5);
+    --default-button-bg-color-active: rgba(249; 117; 0; .5);
+
+    --success-button-text-color: #fff;
+    --success-button-bg-color: #89be0c;
+    --success-button-bg--button-bg-color: #89be0c;
+    --success-button-bg-color-active: #89be0c;
+
+    --danger-button-text-color: #fff;
+    --danger-button-bg-color: #d53838;
+    --danger-button-bg-color-hover: #d53838;
+    --danger-button-bg-color-active: #d53838;
+
+    --warning-button-text-color: #222;
+    --warning-button-bg-color: #F39C12;
+    --warning-button-bg-color-hover: #F39C12;
+    --warning-button-bg-color-active: #F39C12;
+
+    --info-button-text-color: #31343c;
+    --info-button-bg-color: #1dc4dd;
+    --info-button-bg-color-hover: rgba(29; 196; 221; 0.5);
+    --info-button-bg-color-active: rgba(29; 196; 221; 0.5);
+
+    --link-button-text-color: #3b3b3b;
+    --link-button-text-color-hover: #3b3b3b;
+    --link-button-text-color-active: #3b3b3b;
+    --link-button-bg-color: transparent;
+}

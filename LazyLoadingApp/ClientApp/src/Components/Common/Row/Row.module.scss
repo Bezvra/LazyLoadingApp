@@ -1,0 +1,106 @@
+.rowComponent {
+	box-sizing: border-box;
+	flex-grow: 1;
+	display: flex;
+	
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+
+	// Wrap
+	&[data-wrap="wrap"] {
+		flex-wrap: wrap;
+	}
+
+	// Align Row Children
+	&[data-direction="row"] {
+		flex-direction: row;
+
+		// Row center-center 
+		&[data-align-children="center"] {
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	// Align Column Children
+	&[data-direction="column"] {
+		flex-direction: column;
+
+		// Align Cotent/Items Center
+		&[data-align-items="center"] {
+			align-items: center;
+			justify-content: center;
+		}
+
+		// Column center-center 
+		&[data-align-children="center"] {
+			justify-content: center;
+		}
+
+		// Column center-bottom 
+		&[data-align-children="center-bottom"] {
+			justify-content: flex-end;
+		}
+	}
+
+	// Scrollable
+	&.scrollable,
+	&[data-scrollable="true"] {
+		overflow-y: auto;
+		flex-grow: 1;
+		flex-basis: 0;
+		justify-content: flex-start;
+	}
+
+	// Flex Grow 0
+	&[data-grow="0"] {
+		flex-grow: 0;
+	}
+
+	// Flex Grow 1
+	&[data-grow="1"] {
+		flex-grow: 1;
+	}
+
+	// Flex Shrink 0
+	&[data-shrink="0"] {
+		flex-shrink: 0;
+	}
+
+	// Flex Shrink 1
+	&[data-shrink="1"] {
+		flex-shrink: 1;
+	}
+
+	// Align Items Bottom
+	&[data-align-items="bottom"] {
+		align-items: flex-end;
+	}
+
+	// Align Items Top
+	&[data-align-items="top"] {
+		align-items: flex-start;
+	}
+
+	// Align Items Center
+	&[data-align-items="center"] {
+		align-items: center;
+		justify-content: center;
+	}
+
+	// Space Between
+	&[data-align-items="space-between"] {
+		justify-content: space-between;
+	}
+
+    &[data-position="absolute"] {
+      position: absolute;
+    }
+
+    &[data-position="relative"] {
+      position: relative;
+    }
+}

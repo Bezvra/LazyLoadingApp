@@ -1,0 +1,102 @@
+/* stylelint-disable */
+.loaderComponent {
+    box-sizing: border-box;
+    height: 1.3rem;
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    // Spinner
+    .spinner {
+        // Bounces
+        .bounce {
+            width: .625rem;
+            height: .625rem;
+            margin: 0 .25rem;
+            border-radius: 100%;
+            display: inline-block;
+            -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+            animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+            // Bounce 1
+            &.bounce1 {
+                -webkit-animation-delay: -0.4s;
+                animation-delay: -0.4s;
+            }
+            // Bounce 2
+            &.bounce2 {
+                -webkit-animation-delay: -0.32s;
+                animation-delay: -0.32s;
+            }
+            // Bounce 3
+            &.bounce3 {
+                -webkit-animation-delay: -0.16s;
+                animation-delay: -0.16s;
+            }
+            // Bounce 4
+            &.bounce4 {
+                -webkit-animation-delay: -0.08s;
+                animation-delay: -0.08s;
+            }
+        }
+        // Default Loader
+        &[data-type="default"] {
+            .bounce {
+                background-color: var(--secondary-border-color);
+            }
+        }
+        // Success Loader
+        &[data-type="success"] {
+            .bounce {
+                background-color: var(--success-text-color);
+            }
+        }
+        // Info Loader
+        &[data-type="info"] {
+            .bounce {
+                background-color: var( --primary-accent-color);
+            }
+        }
+        // Warning Loader
+        &[data-type="warning"] {
+            .bounce {
+                background-color: var(--warning-text-color);
+            }
+        }
+        // Danger Loader
+        &[data-type="danger"] {
+            .bounce {
+                background-color: var(--danger-text-color);
+            }
+        }
+        // Secondary Loader
+        &[data-type="secondary"] {
+            .bounce {
+                background-color: var(--primary-text-color);
+            }
+        }
+    }
+    // Animation keyframes
+    @-webkit-keyframes sk-bouncedelay {
+        0%, 80%, 100% {
+            -webkit-transform: scale(0)
+        }
+
+        40% {
+            -webkit-transform: scale(1.0)
+        }
+    }
+
+    @keyframes sk-bouncedelay {
+        0%, 80%, 100% {
+            -webkit-transform: scale(0);
+            transform: scale(0);
+        }
+
+        40% {
+            -webkit-transform: scale(1.0);
+            transform: scale(1.0);
+        }
+    }
+}

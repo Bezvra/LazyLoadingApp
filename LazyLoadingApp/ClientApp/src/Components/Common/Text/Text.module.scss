@@ -1,0 +1,101 @@
+.textComponent {
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+
+	font-weight: 400;
+	font-size: 1rem;
+
+	// Display Flex
+	&[data-display="flex"] {
+		display: flex;
+	}
+
+	// Display Inline
+	&[data-display="inline"] {
+		display: inline;
+	}
+
+	// Display Block
+	&[data-display="block"] {
+		display: block;
+	}
+
+	// Display Inline-block
+	&[data-display="inline-block"] {
+		display: inline-block;
+	}
+
+	// White Space
+	&[data-white-space="nowrap"] {
+		white-space: nowrap;
+	}
+
+	&[data-white-space="normal"] {
+		white-space: normal;
+	}
+
+	// Weight
+	&[data-weight="light"] {
+		font-weight: 300;
+	}
+
+	&[data-weight="medium"] {
+		font-weight: 500;
+	}
+
+	&[data-weight="bold"] {
+		font-weight: 700;
+	}
+
+	// Size
+	&[data-size="smallest"] {
+		font-size: .625rem;
+	}
+
+	&[data-size="small"] {
+		font-size: .75rem;
+	}
+
+	&[data-size="default-small"] {
+		font-size: .875rem;
+	}
+
+	&[data-size="default"] {
+		font-size: 1rem;
+	}
+
+	&[data-size="medium"] {
+		font-size: 1.25rem;
+	}
+
+	&[data-size="large"] {
+		font-size: 1.5rem;
+	}
+}
+
+.secondary {
+	color: var(--secondary-text-color);
+}
+
+.primary {
+	color: var(--primary-text-cplor);
+}
+
+.success {
+	color: var(--success-text-color);
+}
+
+.danger {
+	color: var(--danger-text-color);
+}
+
+.label {
+	color: var(--label-text-color);
+}
+
+.accent {
+	color: var(--primary-accent-color);
+}
