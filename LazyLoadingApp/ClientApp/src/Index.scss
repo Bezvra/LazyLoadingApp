@@ -18,9 +18,4 @@ body {
     *::after {
         box-sizing: border-box;
     }
-
-    [data-hexagon-widget-name] {
-        display: flex;
-        flex-grow: 1;
-    }
 }
