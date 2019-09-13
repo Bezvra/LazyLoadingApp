@@ -1,6 +1,6 @@
 ﻿import React from 'react';
-import counterStyles from './ErrorHandler.module.scss';
-import { Cell, Row, Button, Text } from '../../Index';
+import errorHandlerStyles from './ErrorHandler.module.scss';
+import { Cell, Row, Text } from '../../Index';
 
 interface IProps {
     children?: any
@@ -30,7 +30,7 @@ export default class ErrorHandlerComponent extends React.Component<IProps, IStat
 
         if (hasError) {
             return (
-                <Row direction="column" className={counterStyles.errorHandlerComponent}>
+                <Row direction="column" className={errorHandlerStyles.errorHandlerComponent}>
                     <Cell padding="large-none">
                         <Text size="large">Error occurred!</Text>
                     </Cell>

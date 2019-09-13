@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { App } from './App';
 import { store } from './Redux/Store';
 import * as serviceWorker from './serviceWorker';
-import './Default.Theme.scss';
+import './Index.scss';
 
 const rootElement = document.getElementById('root');
 
